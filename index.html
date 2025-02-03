@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÌ XÌ ZÌ ZÍ ZI ZÌ ZIIZII</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Đảm bảo body chiếm toàn bộ chiều cao */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        /* Đặt ảnh nền mờ cho toàn bộ trang */
+        body {
+            position: relative;
+            background-image: url('assets/image/bg.jpg'); /* Thay bằng ảnh nền của bạn */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Giữ cố định khi cuộn */
+        }
+
+        /* Tạo lớp phủ làm mờ */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit; /* Lấy ảnh nền từ body */
+            filter: blur(10px); /* Làm mờ ảnh */
+            z-index: -1;
+        }
+
+        /* Header giữ nguyên màu nền, không bị ảnh nền che */
+        header {
+            background-image: url('assets/image/banner.jpg');
+            background-size: small;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            z-index: 10; /* Giữ header luôn trên cùng */
+        }
+
+        /* Hiệu ứng ánh sáng lung linh */
+        @keyframes glowingText {
+            0% {
+                text-shadow: 0 0 5px #ffec00, 0 0 10px #ffec00, 0 0 15px #ffec00;
+                color: #ffec00;
+            }
+            50% {
+                text-shadow: 0 0 20px #ffec00, 0 0 30px #ffec00, 0 0 40px #ffec00;
+                color: #ff7f00;
+            }
+            100% {
+                text-shadow: 0 0 5px #ffec00, 0 0 10px #ffec00, 0 0 15px #ffec00;
+                color: #ffec00;
+            }
+        }
+
+        /* Áp dụng hiệu ứng ánh sáng lung linh cho tiêu đề */
+        #productsTitle {
+            font-size: 3rem; /* Cỡ chữ lớn */
+            font-weight: bold;
+            text-align: center;
+            animation: glowingText 1.5s infinite alternate; /* Áp dụng hiệu ứng ánh sáng lung linh */
+        }
+
+        /* Nội dung chính */
+        main {
+            position: relative;
+            z-index: 1;
+            padding: 50px 0; /* Tạo khoảng cách trên dưới */
+        }
+
+        .row {
+            position: relative;
+            z-index: 1; /* Giữ nội dung trên ảnh nền */
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-primary text-center py-5"></header>
+
+    <main class="container my-5">
+        <h2 id="productsTitle" class="text-center">LÌ XÌ MAY MẮN ĐẦU NĂM</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <!-- 9 ô lì xì -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=1">
+                        <img src="assets/image/1.jpg" class="card-img-top" alt="Lì xì 1">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=2">
+                        <img src="assets/image/2.jpg" class="card-img-top" alt="Lì xì 2">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=3">
+                        <img src="assets/image/3.jpg" class="card-img-top" alt="Lì xì 3">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=4">
+                        <img src="assets/image/4.jpg" class="card-img-top" alt="Lì xì 4">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=5">
+                        <img src="assets/image/5.jpg" class="card-img-top" alt="Lì xì 5">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=6">
+                        <img src="assets/image/6.jpg" class="card-img-top" alt="Lì xì 6">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=7">
+                        <img src="assets/image/7.jpg" class="card-img-top" alt="Lì xì 7">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=8">
+                        <img src="assets/image/8.jpg" class="card-img-top" alt="Lì xì 8">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <a href="product-detail.html?id=9">
+                        <img src="assets/image/9.jpg" class="card-img-top" alt="Lì xì 9">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
