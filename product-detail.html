@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         /* Ảnh nền phủ toàn bộ */
+        h2 {
+            color: red,
+        }
         body {
             background-image: url('assets/image/banner.jpg'); /* Ảnh nền giống index.html */
             background-size: cover;
@@ -64,7 +67,7 @@
 <body>
 
     <div class="card">
-        <h2 id="title">LÌ XÌ MAY MẮN CẢ NĂM MAY MẮN</h2>
+        <h2 id="title"><span style="color: red; font-weight: bold;">LÌ XÌ MAY MẮN CẢ NĂM MAY MẮN</span></h2>
         <img id="lixiImage" src="" class="img-fluid" alt="Lì Xì">
         <p id="description">Chúc bạn một năm mới phát tài phát lộc!</p>
         <a href="index.html" class="btn btn-primary">Quay lại</a>
@@ -77,9 +80,9 @@
 
 // Dữ liệu lì xì
 const lixiData = {
-    1: { img: "assets/image/1.jpg", text: "ZiiZii nhận được 168.000đ từ Vĩnh Thành lì xì!<br>năm mới phát tài phát lộc nha Zii Zii iu dấuuu" },
-    2: { img: "assets/image/2.jpg", text: "ZiiZii nhận được 346.800đ từ Vĩnh Thành lì xì!<br>năm mới sự nghiệp thăng tiến và thành công nha Zii Zii iu dấuuu" },
-    3: { img: "assets/image/3.jpg", text: "ZiiZii nhận được 188.000đ từ Vĩnh Thành lì xì!<br>năm mới phát tài phát lộc một cách nhanh chóng nha Zii Zii iu dấuuu" },
+    1: { img: "assets/image/1.jpg", text: "ZiiZii nhận được 168.000đ từ Vĩnh Thành lì xì!<br>Năm mới phát tài phát lộc nha Zii Zii iu dấuuu" },
+    2: { img: "assets/image/2.jpg", text: "ZiiZii nhận được 346.800đ từ Vĩnh Thành lì xì!<br>Năm mới sự nghiệp thăng tiến và thành công nha Zii Zii iu dấuuu" },
+    3: { img: "assets/image/3.jpg", text: "ZiiZii nhận được 188.000đ từ Vĩnh Thành lì xì!<br>Năm mới phát tài phát lộc một cách nhanh chóng nha Zii Zii iu dấuuu" },
     4: { img: "assets/image/4.jpg", text: "ZiiZii nhận được 100.100đ từ Vĩnh Thành lì xì!<br>Zii Zii là độc nhất vô nhị :3 hehehe (cái này bèo nhất nên tui sẽ dẫn mimi đi ăn)" },
     5: { img: "assets/image/5.jpg", text: "ZiiZii nhận được 520.000đ từ Vĩnh Thành lì xì!<br>Ùa ớ nỉn ❤️" },
     6: { img: "assets/image/6.jpg", text: "ZiiZii nhận được 230.000đ từ Vĩnh Thành lì xì!<br>Hehe cái này mang ý nghĩa người tặng dành tình cảm sâu sắc cho người được tặng nghen" },
@@ -96,6 +99,9 @@ if (lixiData[id]) {
     document.getElementById("description").innerText = "Lì xì không tồn tại!";
 }
     </script>
-
+<audio id="background-music" autoplay loop>
+    <source src="assets/tet.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+</audio>
 </body>
 </html>
